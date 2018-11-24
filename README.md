@@ -1,6 +1,6 @@
 # Essay-Analyzer
-A web based application which identifies the mispelled words which a user may have written while writing an essay. 
-Hence it can improve the speed and accuracy of writing essays.
+This is a web based application, which identifies the mispelled words which a user may have written while writing an essay. 
+Thus it can improve the speed and accuracy of writing essays.
 This was also submitted as the final project for a course called "Inroduction to Computer Science"(CS50) by HarvardX.
 It includes a basic user interface for user sign-up and user login.
 For storing the user account information I have used SQLite as the default database.
