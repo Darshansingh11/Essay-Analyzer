@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Essay Analyzer
+{% endblock %}
+
+{% block main %}
+    <form action = "{{ url_for('write') }}" method="post">
+        <h3 style="color:Thistle">Write Your Essay here:</h3>
+        <font size="4">
+        <span style="color:Slategray">Title:</span>
+        </font>
+        <input name="tile" type="text" placeholder="Title"/>
+        <br>
+        <br>
+        <br>
+        <br>
+        <textarea rows="15" cols="100" name="text_area" placeholder="Type Here" align="left"></textarea>
+        <br>
+        <input type ="submit" value="Submit Essay"/>
+        <br>
+    </form>
+    
+    <form action = "{{ url_for('result') }}" >
+        <input type ="submit" value="Check your result"/>
+    </form>
+   
+{% endblock %}

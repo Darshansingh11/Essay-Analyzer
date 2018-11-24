@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    INDEX PAGE
+{% endblock %}
+{% block main %}
+    <h1>Welcome to <span style="color:CornflowerBlue">Essay </span><span style="color:Crimson"> Analyzer:</span></h1>
+    <br>
+    <br>
+    <br>
+    <p>
+        <span style="color:saddlebrown">
+            <font size="6">
+        This website helps you to improve accuracy while writing essays.
+        <br>
+        Write essay of any length and click the submit button.
+        <br>
+        After submitting go ahead and check your results.
+        <br>
+        </font>
+        </span>
+    </p>
+    
+    <br>
+    
+    
+    <form action="{{ url_for('write') }}">
+        <input type="submit" value="Start Writing"/>
+    </form>
+    
+{% endblock %}
